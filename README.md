@@ -38,7 +38,7 @@ L’inventaire contient quatre objets. Un objet peut être déposé ou donné à
 - `src/shared.ts` : protocole et définitions des huit pièces.
 - `server/engine.ts` : règles des énigmes, collisions, inventaire, coopération et victoire.
 - `server/index.ts` : salles WebSocket, sauvegarde SQLite, chronomètre, reconnexion et API.
-- `tests/` : parcours logique des huit pièces, objets perdus, test réseau à quatre clients, captures Chrome ordinateur et mobile.
+- `tests/` : parcours logique des huit pièces, objets perdus, parcours physique du hall à quatre clients réseau, reconnexion, captures Chrome ordinateur et mobile.
 
 Le serveur mesure le temps et refuse les actions hors de portée ou sans objet requis. Chaque joueur reçoit un jeton de reconnexion aléatoire de 256 bits, stocké uniquement sous forme de hachage dans la base. Une reprise remplace le jeton précédent. Une salle en cours se recharge après un redémarrage sans réinitialiser son chronomètre.
 
